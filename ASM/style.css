@@ -1,0 +1,536 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    margin: 2%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 95%;
+    left: 0;
+    padding-top: 0;
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes showtop {
+    from {
+        opacity: 0;
+        transform: translate(0, 50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes showtop2 {
+    from {
+        opacity: 0;
+        transform: translate(0, 50px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+        z-index: 100;
+    }
+}
+
+@keyframes showtop3 {
+    from {
+        opacity: 0;
+        transform: translate(-100px, 0px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+        z-index: 99;
+    }
+}
+
+@keyframes showtop4 {
+    from {
+        opacity: 0;
+        transform: translate(100px, 0px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+        z-index: -10;
+    }
+}
+
+.animationTop {
+    opacity: 0;
+    animation: showtop 0.5s ease-in-out 1 forwards;
+}
+
+.animationTop2 {
+    opacity: 0;
+    animation: showtop2 0.4s ease-in-out 1 forwards;
+
+}
+
+.animationTop3 {
+    opacity: 0;
+    animation: showtop3 0.5s ease-in-out 1 forwards;
+}
+
+.animationTop4 {
+    opacity: 0;
+    animation: showtop4 0.5s ease-in-out 1 forwards;
+}
+
+.delay-sp {
+    animation-delay: 0.1s !important;
+
+}
+
+.delay-tk {
+    animation-delay: 0.1s !important;
+
+}
+
+.delay-01 {
+    animation-delay: 0.1s !important;
+
+}
+
+.delay-02 {
+    animation-delay: 0.2s !important;
+}
+
+.delay-03 {
+    animation-delay: 0.3s !important;
+}
+
+.delay-04 {
+    animation-delay: 0.4s !important;
+}
+
+.delay-05 {
+    animation-delay: 0.5s !important;
+}
+
+.delay-06 {
+    animation-delay: 0.6s !important;
+}
+
+.delay-07 {
+    animation-delay: 0.7s !important;
+}
+
+.delay-08 {
+    animation-delay: 0.8s !important;
+}
+
+.delay-09 {
+    animation-delay: 0.9s !important;
+}
+
+.delay-10 {
+    animation-delay: 1s !important;
+}
+
+.delay-11 {
+    animation-delay: 1.1s !important;
+}
+
+.delay-12 {
+    animation-delay: 1.2s !important;
+}
+
+.delay-13 {
+    animation-delay: 1.3s !important;
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    min-height: 260px;
+}
+
+.img-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    min-height: 260px;
+}
+
+.video-overlay {
+    position: absolute;
+    background-color: rgba(56, 61, 72, 0.85);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 260px;
+}
+
+.main-banner .caption {
+    text-align: center;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-banner {
+    position: relative;
+    top: 0;
+}
+
+.caption h6 {
+    margin-top: 0px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    transform: translate(-50%, -50%);
+    animation: moveUpDown 3s ease-in-out infinite;
+}
+
+.caption h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 64px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+    transform: translate(-50%, -50%);
+    animation: moveUpDown 3s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+.main-banner .caption h2 em {
+    font-style: normal;
+    color: #A59565;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 1180px) {
+
+    .main-banner .caption h6 {
+        font-weight: 300;
+    }
+
+    .main-banner .caption h2 {
+        font-size: 48px;
+    }
+
+}
+
+@media screen and (max-width: 601px) {
+    .menuTabs {
+        display: none
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .main-banner .caption h6 {
+        display: none;
+    }
+
+    .main-banner .caption h2 {
+        display: none;
+    }
+
+
+}
+
+.menu-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    z-index: 9999;
+    margin-left: 0;
+    padding-left: 2%;
+    margin-top: 0;
+}
+
+.menu-header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #8D8D8D;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    z-index: 9999;
+}
+
+.parallax-container {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.parallax-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: translate3d(0, 0, 0);
+}
+
+#timKiem:focus {
+    box-shadow: none;
+}
+
+.button-hbh {
+    height: 40px;
+    border: 1px solid #8D8D8D;
+    transform: skewX(-20deg);
+    transition: 0.5s;
+}
+
+.input-hbh {
+    height: 40px;
+    border: 1px solid #8D8D8D;
+    transform: skewX(-20deg);
+    transition: 0.5s;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bbbbbb;
+    border-radius: 10px;
+}
+
+header.hidden {
+    transform: translateY(-100%);
+}
+
+a:hover {
+    color: black;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+img:hover {
+    transform: translateY(-5px);
+}
+
+img {
+    transition: transform .5s ease;
+}
+
+.accordion-item {
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+.accordion-button {
+    background: transparent;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.collapse .navbar-collapse ul li {
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+ul {
+    padding-left: 0;
+    padding-bottom: 0;
+    border-radius: 5px;
+}
+
+ul li:hover {
+    text-decoration: double;
+}
+
+.accordion-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.accordion-body ul li {
+    margin-top: 5px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.accordion-body ul li a {
+    text-decoration: none;
+    color: #9C9192;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #A59565;
+    background-color: white;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #A59565;
+    border-radius: 0px;
+}
+
+.nav-link {
+    color: #A59565;
+}
+
+.nav-link:hover {
+    color: #8D8D8D;
+}
+
+.table-primary {
+    --bs-table-bg: white;
+}
+
+thead {
+    color: #A59565;
+}
+
+tbody {
+    border-color: #8D8D8D;
+}
+
+.cheo {
+    position: relative;
+    width: 100%;
+   
+    overflow: hidden;
+
+}
+
+.cheo-trai {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #A59565;
+    opacity: 0.3;
+    z-index: -100;
+}
+
+.cheo-phai {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: white;
+    z-index: -100;
+}
+
+.cheo-trai {
+    left: 0;
+    transform: skew(-45deg);
+}
+
+.cheo-phai {
+    right: 0;
+    transform: skew(45deg);
+}
+
+.theLoai ul li {
+    transition: 0.5s;
+
+}
+
+.theLoai ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.theLoai ul a :hover {
+    transform: translateX(10px);
+    color: #A59565;
+}
+
+.button-hbh:focus {
+    background: #A59565;
+    color: white;
+}
+
+.tieuDe h5 {
+    text-align: left;
+    width: 95%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.scroll-to-top.show {
+    display: block;
+}
+
+.scroll-to-top i {
+    font-size: 24px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

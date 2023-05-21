@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f737751420.js"></script>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        #arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="arrow-up" onclick="topFunction()"></div>
+    <i class="fa-solid fa-star"></i>
+    <div style="height: 1000vh;background: gray;"></div>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("arrow-up").appendChild('<i class="fa-solid fa-star"></i>');
+  } else {
+    document.getElementById("arrow-up").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f737751420.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Chi tiết giỏ hàng</title>
+</head>
+<body style="padding-top: 63px;">
+    <header class="menu-header sticky">
+        <nav class="navbar navbar-expand-sm navbar-light ">
+            <a class="navbar-brand" href="#"
+                style="color: white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder; font-size: 25px;">SMARTPHONE
+                SHOP</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId" style="position: relative; right: 0;">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0 menuHeader">
+                    <form class="d-flex my-2 my-lg-0">
+                        <input id="timKiem" class="form-control me-sm-2 button-hbh" type="text" placeholder="Từ khóa">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                            style="color: white;transform: skewX(-20deg); border: 1px solid white;"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" style="color: white;">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId"
+                            style=" background: #8D8D8D;position: absolute; left: -30px;">
+                            <a class="dropdown-item" href="#">Đăng nhập</a>
+                            <a class="dropdown-item" href="#">Đăng kí</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page" style="color: white;"><i
+                                class="fa-regular fa-heart"></i>(0)
+                            <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;"><i
+                                class="fa-regular fa-cart-shopping"></i>(0)</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+    <div class="container" style="height: 500px;margin-top: 10px;">
+        <div style="background: #F3F3F3;">
+            <small>>Chi tiết giỏ hàng</small>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="table-responsive">
+                <table class="table table-primary">
+                    <thead>
+                        <tr>
+                            <th scope="col">Column 1</th>
+                            <th scope="col">Column 2</th>
+                            <th scope="col">Column 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td scope="row">R1C1</td>
+                            <td>R1C2</td>
+                            <td>R1C3</td>
+                        </tr>
+                        <tr class="">
+                            <td scope="row">Item</td>
+                            <td>Item</td>
+                            <td>Item</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        <br>
+
+        <footer>
+
+            <center>
+                <hr style="width: 30%;">
+                <p>quyhdpc04119@fpt.edu.vn</p>
+                <p>FPT polytechnic Cần Thơ</p>
+                <p>IT17304</p>
+            </center>
+        </footer>
+    </div>
+    <script>
+        var header = document.querySelector('header');
+        var lastScrollTop = 0;
+        window.addEventListener('scroll', function () {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                header.classList.add('hidden');
+            } else {
+                header.classList.remove('hidden');
+            }
+            lastScrollTop = scrollTop;
+        });
+
+
+    </script>
+</body>
+
+</html>

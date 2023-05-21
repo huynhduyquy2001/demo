@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .arrow {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.arrow a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 40px;
+}
+.arrow a:hover {
+  background: #555;
+}
+.arrow.show {
+  opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+    
+        <div class="arrow">
+          <a href="#top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+        <!-- Your website content here -->
+        <div style="height: 1000vh;background: gray;"></div>
+      <script>
+        window.addEventListener('scroll', function() {
+  var arrow = document.querySelector('.arrow');
+  arrow.classList.toggle('show', window.scrollY > 0);
+});
+
+      </script>
+</body>
+</html>
